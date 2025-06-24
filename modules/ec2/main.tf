@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0f58b397bc5c1f2e8"  
+  ami                    = "ami-0c2b8ca1dad447f8a"  
   instance_type          = "t2.micro"
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
